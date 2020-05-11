@@ -4,7 +4,7 @@ Skeleton program to get Oracle Instantclient running in an AWS Lambda function.
 
 # Create an AWS Lambda Function
 
-Login to your AWS console. Go to Lambda's. Create a new, blank lambda function. Name it "pythonOracleTest", and select Runtime Python 2.7.
+Login to your AWS console. Go to Lambda's. Create a new, blank lambda function. Name it "pythonOracleTest", and select Runtime Python 3.8.
 
 Add the following encrypted environment variables:
 
@@ -23,7 +23,7 @@ I used an Ubuntu EC2 instance to build the libraries. Go over to your Ubuntu mac
 Prerequisites:
 
 	zip and unzip (sudo apt-get install zip unzip)
-	python 2.7 and pip (google "ubuntu pip install")
+	python 3.8 and pip (google "ubuntu pip install")
 	make (you can just run the commands in the Makefile if you rather)
 
 ## Download the Oracle Instantclient
