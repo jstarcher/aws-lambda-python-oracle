@@ -15,7 +15,7 @@ init:
 	mv /tmp/$(INSTANT_CLIENT_DIR)/ ./lib/
 	ln -s ./libclntsh.so.12.1 ./lib/libclntsh.so
 	cp /lib/x86_64-linux-gnu/libaio.so.1 ./lib/
-	pip install cx_Oracle -t .;\
+	pip3 install cx_Oracle -t .;\
 
 lambda.zip:
 	zip -r $(LAMBDA_ZIP) lambda_function.py lib cx*
